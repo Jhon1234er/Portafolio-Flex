@@ -1,11 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+body {
+    margin: 0;
+    overflow: hidden;
+}
 
-.Titulo{
-    font-family: Rubik Wet Paint ;
+.Ulti {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;
+    justify-items: center; 
+    align-items: start; 
+}
+
+.items {
+    margin: 10px 0;
+}
+
+.Contenido {
+    background-color: cadetblue; 
+    display: grid; 
+    justify-items: center; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.links {
+    color: teal;
+    text-decoration: none;
+    font-family: 'Rubik Wet Paint', sans-serif;
+}
+
+.Titulo {
+    font-family: 'Rubik Wet Paint', sans-serif;
     text-align: center;
     margin-top: 15%;
 }
 
-.Datos{
+.contacto {
     text-align: center;
+}
+
+.contacto__item {
+    margin: 10px 0;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    z-index: -1;
 }
